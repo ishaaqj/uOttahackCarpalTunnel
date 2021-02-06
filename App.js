@@ -6,7 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 //import Video from 'react-native-video';
 import LandingScreen from "./components/Landing";
-import TrainingScreen from "./components/Training";
+import TrainingScreen from "./components/Training1";
 
 
 const Stack = createStackNavigator();
@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <Fragment>
-      
+
 
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Landing">
