@@ -1,14 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
-import React from "react";
+import React, { Component } from "react";
 import { Text, View, Button } from "react-native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-export default function Landing({ navigation }) {
-  return (
-    <View style={{ flex: 1, justifyContent: "center" }}>
-      <Button
-        title="Training"
-        onPress={() => navigation.navigate("Training")}
-      />
-    </View>
-  );
+const Tab = createBottomTabNavigator();
+
+export class Landing extends Component {
+  render() {
+    return (
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
+    );
+  }
 }

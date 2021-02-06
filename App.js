@@ -11,15 +11,12 @@ import TrainingScreen from "./components/Training";
 const Stack = createStackNavigator();
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Landing">
-        <Stack.Screen
-          name="Landing"
-          component={LandingScreen}
-          options={{ headerShown: false }}
-        ></Stack.Screen>
-        <Stack.Screen name="Training" component={TrainingScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator initialRouteName="Landing">
+      <Stack.Screen
+        name="Landing"
+        component={MainScreen}
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+    </Stack.Navigator>
   );
 }
