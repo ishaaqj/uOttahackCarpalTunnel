@@ -22,7 +22,7 @@ export default function Training({ navigation }) {
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Training Screen</Text>
         <Button
-          title="Landing"
+          title="Next Excerise"
           onPress={() => navigation.navigate("Landing")}
         />
       </View>
