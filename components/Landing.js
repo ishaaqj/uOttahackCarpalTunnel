@@ -1,14 +1,8 @@
-import { NavigationContainer } from "@react-navigation/native";
-import React from "react";
-import { Text, View, Button } from "react-native";
+import React, { Component } from "react";
 
-export default function Landing({ navigation }) {
-  return (
-    <View style={{ flex: 1, justifyContent: "center" }}>
-      <Button
-        title="Training"
-        onPress={() => navigation.navigate("Training")}
-      />
-    </View>
-  );
+export class Landing extends Component {
+  render() {
+    return <div>hello</div>;
+  }
 }
+export default Landing;
