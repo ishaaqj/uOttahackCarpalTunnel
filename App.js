@@ -1,13 +1,14 @@
 import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useRef, useState, Component, Fragment } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-
 import MainScreen from "./components/Main";
 
+
 const Stack = createStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -21,3 +22,13 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+var styles = StyleSheet.create({
+  backgroundVideo: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+});
