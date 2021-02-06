@@ -1,7 +1,8 @@
 import { NavigationContainer } from "@react-navigation/native";
+import TrainingScreen from "./components/Training2";
 import React, { Fragment } from "react";
 import { Text, View, Button } from "react-native";
-import { Video } from "expo-av"; 
+import { Video } from "expo-av";
 
 export default function Training({ navigation }) {
   return (
@@ -13,10 +14,10 @@ export default function Training({ navigation }) {
         rate={1.0}
         volume={1.0}
         isMuted={false}
-        resizeMode="cover"
+        resizeMode="contain"
         shouldPlay
         isLooping
-        style={{ width: 300, height: 300 }}
+        style={{ width: 500, height: 300 }}
       />
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Training Screen</Text>
