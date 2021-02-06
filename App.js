@@ -4,10 +4,10 @@ import React, { useRef, useState, Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Video from 'react-native-video';
+//import Video from 'react-native-video';
 import LandingScreen from "./components/Landing";
 import TrainingScreen from "./components/Training";
-
+import { Video } from 'expo-av';
 
 // export default class YoutubeExample extends Component {
 //   constructor(props) {
@@ -61,30 +61,32 @@ import TrainingScreen from "./components/Training";
 
 export default function App() {
   return (
-
-    <Video source={{ uri: "vid1" }}   // Can be a URL or a local file.
-      ref={(ref) => {
-        this.player = ref
-      }}                                      // Store reference
-      onBuffer={this.onBuffer}                // Callback when remote video is buffering
-      onError={this.videoError}               // Callback when video cannot be loaded
-      style={styles.backgroundVideo} />
-
-
-  )
-};
-{/* <NavigationContainer>
-  <Stack.Navigator initialRouteName="Landing">
-    <Stack.Screen
-      name="Landing"
-      component={LandingScreen}
-      options={{ headerShown: false }}
-    ></Stack.Screen>
-    <Stack.Screen name="Training" component={TrainingScreen} />
-  </Stack.Navigator>
-</NavigationContainer>
+    <Video
+      source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+      rate={1.0}
+      volume={1.0}
+      isMuted={false}
+      resizeMode="cover"
+      shouldPlay
+      isLooping
+      style={{ width: 300, height: 300 }}
+    />
   );
-} */}
+}
+
+
+/* <NavigationContainer>
+<Stack.Navigator initialRouteName="Landing">
+  <Stack.Screen
+    name="Landing"
+    component={LandingScreen}
+    options={{ headerShown: false }}
+  ></Stack.Screen>
+  <Stack.Screen name="Training" component={TrainingScreen} />
+</Stack.Navigator>
+</NavigationContainer>
+);
+} */
 
 var styles = StyleSheet.create({
   backgroundVideo: {
