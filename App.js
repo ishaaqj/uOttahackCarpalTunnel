@@ -5,6 +5,9 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
+import LandingScreen from "./components/Landing";
+import TrainingScreen from "./components/Training";
+
 const Stack = createStackNavigator();
 export default function App() {
   return (
@@ -16,7 +19,6 @@ export default function App() {
           options={{ headerShown: false }}
         ></Stack.Screen>
         <Stack.Screen name="Training" component={TrainingScreen} />
-        <Stack.Screen name="Exercises" component={ExercisesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
