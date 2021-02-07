@@ -6,6 +6,7 @@ const Tab = createBottomTabNavigator();
 
 import LandingScreen from "./Landing";
 import TrainingScreen from "./Training";
+import ExercisesScreen from "./ListOfExercises"
 
 export class Main extends Component {
   render() {
@@ -13,6 +14,7 @@ export class Main extends Component {
       <Tab.Navigator>
         <Tab.Screen name="LandingScreen" component={LandingScreen} />
         <Tab.Screen name="TrainingScreen" component={TrainingScreen} />
+        <Tab.Screen name="List Of Exercises" component={ExercisesScreen} />
       </Tab.Navigator>
     );
   }
