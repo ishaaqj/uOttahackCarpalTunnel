@@ -2,35 +2,37 @@ import React, { useState, Fragment } from "react";
 import { ImageBackground, FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, Image, View } from "react-native";
 import TrainingScreen from "./Training";
 import Training_Moderate from "./Training_Moderate";
+import Training_Severe from "./Training_Severe";
 import { NavigationContainer } from "@react-navigation/native";
 
 const DATA = [
     {
         id: "1",
-        title: "The Rolling Robo1t",
-        uri: "https://thumbs.gfycat.com/CelebratedTanAmericanbadger-small.gif",
+        title: "Stretches for Mild Carpal Tunnel",
+        uri: "https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif",
         screen: "TrainingScreen"
     },
     {
         id: "2",
-        title: "The Funky Monkey2",
+        title: "Stretches for Moderate Carpal Tunnel",
         uri: 'https://thumbs.gfycat.com/DefiniteNarrowGenet-small.gif',
         screen: "Training_Moderate"
     },
     {
         id: "3",
-        title: "The Trankey Doo",
-        uri: 'https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif'
+        title: "Stretches for Severe Carpal Tunnel",
+        uri: 'https://thumbs.gfycat.com/IllfatedOptimisticFurseal-size_restricted.gif',
+        screen: "Training_Severe"
     },
     {
         id: "4",
-        title: "The 420 asdasdasd",
-        uri: 'https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif'
+        title: "Wrist-Isolation Exercises",
+        uri: 'https://i.makeagif.com/media/10-03-2015/3f7U-p.gif'
     },
     {
         id: "5",
-        title: "The aasdad asdasd",
-        uri: 'https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif'
+        title: "Joint-Flexibility Exercises",
+        uri: 'https://i.pinimg.com/originals/50/f6/38/50f6389efd5d41783e9bca4297a02ce7.gif'
     },
 ];
 

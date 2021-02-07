@@ -3,15 +3,15 @@ import React, { Fragment } from "react";
 import { SafeAreaView, StyleSheet, Text, View, Button } from "react-native";
 import { Video } from "expo-av";
 import Carousel, { Pagination } from "react-native-snap-carousel";
-import CarouselCardItem, { SLIDER_WIDTH, ITEM_WIDTH } from "./CarouselCardItem";
-import CarouselCards from "./CarouselCards";
+import CarouselCardItem_Severe, { SLIDER_WIDTH, ITEM_WIDTH } from "./CarouselCardItem_Severe";
+import CarouselCards_Severe from "./CarouselCards_Severe";
 import Stopwatch from "./stopwatch/stopwatch";
 
-export default function Training({ navigation }) {
+export default function Training_Severe({ navigation }) {
   const [index, setIndex] = React.useState(0);
   return (
     <SafeAreaView style={styles.container}>
-      <CarouselCards />
+      <CarouselCards_Severe />
     </SafeAreaView>
   );
 }
