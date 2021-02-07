@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export class Landing extends Component {
   render() {
-    return <div>hello</div>;
+    return <Text>hello</Text>;
   }
 }
 export default Landing;

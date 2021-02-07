@@ -1,5 +1,4 @@
 import { NavigationContainer } from "@react-navigation/native";
-
 import React, { Fragment } from "react";
 import { SafeAreaView, StyleSheet, Text, View, Button } from "react-native";
 import { Video } from "expo-av";
@@ -9,14 +8,19 @@ import CarouselCards from "./CarouselCards";
 import Stopwatch from "./stopwatch/stopwatch";
 
 export default function Training({ navigation }) {
+  const [index, setIndex] = React.useState(0);
   return (
-    <fragment>
-      <SafeAreaView style={styles.container}>
-        <CarouselCards />
-      </SafeAreaView>
-      <View>
-        <Stopwatch />
-      </View>
-    </fragment>
+    <SafeAreaView style={styles.container}>
+      <CarouselCards />
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 50,
+  },
+});
