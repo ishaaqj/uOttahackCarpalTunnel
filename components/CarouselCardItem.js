@@ -1,5 +1,6 @@
-import React from 'react'
-import { View, Text, StyleSheet, Dimensions, Image } from "react-native"
+import React, { Fragment } from "react";
+import { View, Text, StyleSheet, Dimensions, Image, Button } from "react-native";
+import { Video } from "expo-av";
 
 export const SLIDER_WIDTH = Dimensions.get('window').width + 80
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7)
@@ -11,6 +12,18 @@ const CarouselCardItem = ({ item, index }) => {
                 source={{ uri: item.imgUrl }}
                 style={styles.image}
             />
+            {/* <Video
+                source={{
+                    uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+                }}
+                rate={1.0}
+                volume={1.0}
+                isMuted={false}
+                resizeMode="cover"
+                shouldPlay
+                isLooping
+                style={{ width: 350, height: 200 }}
+            /> */}
             <Text style={styles.header}>{item.title}</Text>
             <Text style={styles.body}>{item.body}</Text>
         </View>

@@ -1,21 +1,22 @@
+
 var data = [
-  {
-    title: "Aenean leo",
-    body:
-      "Ut tincidunt tincidunt erat. Sed cursus turpis vitae tortor. Quisque malesuada placerat nisl. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
-    imgUrl: "https://picsum.photos/id/11/200/300",
-  },
-  {
-    title: "In turpis",
-    body:
-      "Aenean ut eros et nisl sagittis vestibulum. Donec posuere vulputate arcu. Proin faucibus arcu quis ante. Curabitur at lacus ac velit ornare lobortis. ",
-    imgUrl: "https://picsum.photos/id/10/200/300",
-  },
-  {
-    title: "Lorem Ipsum",
-    body:
-      "Phasellus ullamcorper ipsum rutrum nunc. Nullam quis ante. Etiam ultricies nisi vel augue. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc.",
-    imgUrl: "https://picsum.photos/id/12/200/300",
-  },
+    {
+        title: "Exercise 1",
+        body:
+            "Do this exercise for 10 seconds.",
+        imgUrl: "https://thumbs.gfycat.com/CelebratedTanAmericanbadger-small.gif",
+    },
+    {
+        title: "Exercise 2",
+        body:
+            "Do this exercise 10 times.",
+        imgUrl: "https://thumbs.gfycat.com/DefiniteNarrowGenet-small.gif",
+    },
+    {
+        title: "Exercise 3",
+        body:
+            "Do this exercise for 10 seconds.",
+        imgUrl: "https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif",
+    },
 ];
 export default data;
