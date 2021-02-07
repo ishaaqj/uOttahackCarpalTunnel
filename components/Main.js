@@ -36,26 +36,27 @@ export class Main extends Component {
           }}
         />
         <Tab.Screen
-          name="List Of Exercises"
+          name="ExercisesScreen"
           component={ExercisesScreen}
           options={{
-            tabBarLabel: "Excersise",
+            tabBarLabel: "Exercises",
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="dumbbell" color={color} size={30} />
             ),
           }}
         />
-        <Tab.Screen name="TrainingScreen" component={TrainingScreen}options={{
-            tabBarLabel: "Home",
-            tabBarIcon: ({ color, size }) => (
-              <MaterialCommunityIcons name="weight-lifter" color={color} size={30} />
-            ),
-          }} />
         <Tab.Screen
-          name="ModerateTrainingScreen"
-          component={TrainingModerateScreen}
+          name="TrainingScreen"
+          component={TrainingScreen}
           options={{
-            showLabel: "false",
+            tabBarLabel: "Training",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="weight-lifter"
+                color={color}
+                size={30}
+              />
+            ),
           }}
         />
       </Tab.Navigator>
