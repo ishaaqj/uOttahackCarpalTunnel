@@ -9,7 +9,7 @@ export class StopwatchContainer extends Component {
 
     this.state = {
       min: 0,
-      sec: 0,
+      sec: 10,
       msec: 0,
       start: false,
     };
