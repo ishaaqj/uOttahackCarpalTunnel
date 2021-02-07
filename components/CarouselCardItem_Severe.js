@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 import { View, Text, StyleSheet, Dimensions, Image, Button } from "react-native";
+import { Video } from "expo-av";
 
 export const SLIDER_WIDTH = Dimensions.get('window').width + 80
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7)
 
-const CarouselCardItem = ({ item, index }) => {
+const CarouselCardItem_Severe = ({ item, index }) => {
     return (
         <View style={styles.container} key={index}>
             <Image
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderRadius: 8,
         width: ITEM_WIDTH,
-        paddingBottom: 50,
+        paddingBottom: 40,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -59,9 +60,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         paddingLeft: 20,
         paddingLeft: 20,
-        paddingRight: 20,
-        height:200
+        paddingRight: 20
     }
 })
 
-export default CarouselCardItem
+export default CarouselCardItem_Severe

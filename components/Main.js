@@ -15,9 +15,10 @@ export class Main extends Component {
     return (
       <Tab.Navigator
         tabBarOptions={{
-          activeTintColor: "#e91e63",
-          activeBackgroundColor: "steelblue",
-          inactiveBackgroundColor: "powderblue",
+          activeTintColor: "#111",
+          inactiveTintColor: "#111",
+          activeBackgroundColor: "#feb236",
+          inactiveBackgroundColor: "steelblue",
           labelStyle: {
             fontSize: 19,
             fontWeight: "bold",
@@ -34,23 +35,31 @@ export class Main extends Component {
             ),
           }}
         />
-        <Tab.Screen name="List Of Exercises" component={ExercisesScreen} />
-        <Tab.Screen name="TrainingScreen" component={TrainingScreen} />
+        <Tab.Screen
+          name="List Of Exercises"
+          component={ExercisesScreen}
+          options={{
+            tabBarLabel: "Excersise",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="dumbbell" color={color} size={30} />
+            ),
+          }}
+        />
+        <Tab.Screen name="TrainingScreen" component={TrainingScreen}options={{
+            tabBarLabel: "Home",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="weight-lifter" color={color} size={30} />
+            ),
+          }} />
         <Tab.Screen
           name="ModerateTrainingScreen"
           component={TrainingModerateScreen}
           options={{
-            showLabel:"false"
+            showLabel: "false",
           }}
         />
       </Tab.Navigator>
     );
   }
 }
-const styles = StyleSheet.create({
-  fontFamily: "Cochin",
-  fontSize: 20,
-  fontWeight: "bold",
-});
-
 export default Main;

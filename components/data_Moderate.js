@@ -1,20 +1,20 @@
 var dataModerate = [
   {
-    title: "Exercise 1",
-    body: "Do this exercise for 10 seconds.",
+    title: "Exercise 1: Shaking Hands",
+    body: "Do this exercise for 10 seconds.\nThis exercise increases blood flow, and provides stretching to elbows, wrists, hands, and knuckles at once.",
     imgUrl:
-      "https://media3.giphy.com/media/3orieVj21XUCFXY2s0/giphy.gif?cid=ecf05e47tlcgadz22imjfsyiyhkkmi3gmwy59asbo7ztnzry&rid=giphy.gif",
+      "https://thumbs.gfycat.com/ImpureBriskGalapagosmockingbird-small.gif",
   },
   {
-    title: "Exercise 2",
-    body: "Do this exercise 10 times.",
-    imgUrl: "https://thumbs.gfycat.com/DefiniteNarrowGenet-small.gif",
+    title: "Exercise 2: Enhanced Digit Articulation",
+    body: "Do this exercise 10 times.\nThis exercise stretches tendons in the fingers; do this frequently to avoid stiffness.",
+    imgUrl: "https://tcomn.com/wp-content/uploads/2018/10/Hand-and-Wrist_Finger-Movement-Exercises_Carpal-Tunnel-Prevention-min-1.gif",
   },
   {
-    title: "Exercise 3",
-    body: "Do this exercise for 10 seconds.",
+    title: "Exercise 3: Rubber Band Stretch",
+    body: "Do this exercise for 10 seconds.\nThis exercise requires a rubber band. This can be very helpful in undoing hand strain.",
     imgUrl:
-      "https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif",
+      "https://www.nerdfitness.com/wp-content/uploads/2019/06/rubber-band-extensions-for-hand-health.gif",
   },
 ];
 export default dataModerate;

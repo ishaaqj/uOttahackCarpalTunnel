@@ -7,7 +7,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import MainScreen from "./components/Main";
 import Training_Moderate from "./components/Training_Moderate";
-
+import Training_Severe from "./components/Training_Severe";
 
 const Stack = createStackNavigator();
 
@@ -18,11 +18,22 @@ export default function App() {
         <Stack.Screen
           name="Main"
           component={MainScreen}
-          options={{ headerShown: false }}
+          options={{
+            headerShown: false,
+            cardStyle: { backgroundColor: "#d64161" },
+          }}
         ></Stack.Screen>
         <Stack.Screen
           name="Training_Moderate"
           component={Training_Moderate}
+          options={{
+            headerShown: false,
+            cardStyle: { backgroundColor: "#d64161" },
+          }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="Training_Severe"
+          component={Training_Severe}
           options={{ headerShown: false }}
         ></Stack.Screen>
       </Stack.Navigator>
