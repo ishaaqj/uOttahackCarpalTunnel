@@ -25,7 +25,7 @@ export default function App() {
 
 var styles = StyleSheet.create({
   backgroundVideo: {
-    posiexpotion: "absolute",
+    //posiexpotion: "absolute",
     top: 0,
     left: 0,
     bottom: 0,
