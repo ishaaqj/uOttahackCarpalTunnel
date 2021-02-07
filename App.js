@@ -6,6 +6,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import MainScreen from "./components/Main";
+import Training_Moderate from "./components/Training_Moderate";
+
 
 const Stack = createStackNavigator();
 
@@ -16,6 +18,11 @@ export default function App() {
         <Stack.Screen
           name="Main"
           component={MainScreen}
+          options={{ headerShown: false }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="Training_Moderate"
+          component={Training_Moderate}
           options={{ headerShown: false }}
         ></Stack.Screen>
       </Stack.Navigator>

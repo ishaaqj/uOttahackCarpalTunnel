@@ -1,17 +1,35 @@
 import React, { useState, Fragment } from "react";
 import { ImageBackground, FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, Image, View } from "react-native";
+import TrainingScreen from "./Training";
+import Training_Moderate from "./Training_Moderate";
+import { NavigationContainer } from "@react-navigation/native";
 
 const DATA = [
     {
-        title: "The Rolling Robot",
-        uri: "https://thumbs.gfycat.com/CelebratedTanAmericanbadger-small.gif"
+        id: "1",
+        title: "The Rolling Robo1t",
+        uri: "https://thumbs.gfycat.com/CelebratedTanAmericanbadger-small.gif",
+        screen: "TrainingScreen"
     },
     {
-        title: "The Funky Monkey",
-        uri: 'https://thumbs.gfycat.com/DefiniteNarrowGenet-small.gif'
+        id: "2",
+        title: "The Funky Monkey2",
+        uri: 'https://thumbs.gfycat.com/DefiniteNarrowGenet-small.gif',
+        screen: "Training_Moderate"
     },
     {
+        id: "3",
         title: "The Trankey Doo",
+        uri: 'https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif'
+    },
+    {
+        id: "4",
+        title: "The 420 asdasdasd",
+        uri: 'https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif'
+    },
+    {
+        id: "5",
+        title: "The aasdad asdasd",
         uri: 'https://images-prod.healthline.com/hlcmsresource/images/topic_centers/Fitness-Exercise/648x364_3_Wrist_Exercises_to_Prevent_Carpal_Tunnel_EXERCISE_1.gif'
     },
 ];
@@ -30,17 +48,21 @@ const Item = ({ item, onPress, style }) => (
     </TouchableOpacity>
 );
 
-const App = () => {
+/*
+1. Describe exercises on carousel. 1 sentence - this exercise 
+*/
+
+const App = ({ navigation }) => {
     const [selectedId, setSelectedId] = useState(null);
 
     const renderItem = ({ item }) => {
-        const backgroundColor = item.id === selectedId ? "black" : "blue";
+        const backgroundColor = "#999999";
 
         return (
             <Fragment>
                 <Item
                     item={item}
-                    onPress={() => setSelectedId(item.id)}
+                    onPress={() => navigation.navigate(item.screen)}
                     style={{ backgroundColor }}
                 />
 
